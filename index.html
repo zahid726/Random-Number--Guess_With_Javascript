@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Numbers with input</title>
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/function.js"></script>
+</head>
+<body>
+    <h1 class="bg-danger text-center text-light">Play With Random Numbers , Let's Go</h1>
+    <div class="container">
+        <div class="title text-center">
+            <h1 class="text-light display-4" >Play With Random Numbers !!!</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 border border-danger">
+            <div class="container">
+                <H3 class="text-info"> Enter the Guess Numbers from (0-9) to WIN the GAME</H3>
+                <br>
+                <p>Enter The Guess Number : <input type="number" id="guessno" placeholder="Enter"> <button class="btn btn-info" onclick="randomcondition();"> Click To Answer</button> </p>
+            </div>
+        </div>
+        <div class="col-md-2 border border-success">
+            <div class="container" id="arrow">
+              
+            </div>
+        </div>
+        <div class="col-md-4 border border-info">
+            <div class="container text-center">
+                <h2 id="message"></h2>
+                <h2 id="message1"></h2>
+            </div>
+            <div class="container">
+            <div class="row mt-5 text-center">
+                
+                <div class="col-md-6">
+                   <label for=""><b>Ramdom No Was :</b>  <label id="showgrandom" id><b> Random no</b> </label></label>
+                </div>
+                <div class="col-md-6">
+                    <label for=""><b>Guess Number Was : </b> <label id="guessdisplay" id><b>your Guess</b> </label></label>
+                </div>
+            </div>
+        </div>
+            <div class="container mt-5 text-center"><b>Press Click to Answer Button  to Continue</b>  </div>
+        </div>
+    </div>
+    <div class="container text-center mt-5">
+       <a href="index.html"> <button id="playagain"  class="btn btn-primary "> Play Again</button> </a>
+    </div>
+</body>
+</html>
