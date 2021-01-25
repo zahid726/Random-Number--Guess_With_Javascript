@@ -15,17 +15,19 @@
             <h1 class="text-light display-4" >Play With Random Numbers !!!</h1>
         </div>
     </div>
-    <div class="row">
+    <div id="allrow" class="row">
         <div class="col-md-6 border border-danger">
             <div class="container">
                 <H3 class="text-info"> Enter the Guess Numbers from (0-9) to WIN the GAME</H3>
+                <H3 class="text-info"><B style="color: red;">Remember !! </B > You have Only <b style="color: red;" id="counterdown">10</b> Tries To Won The Game</H3>
                 <br>
-                <p>Enter The Guess Number : <input type="number" id="guessno" placeholder="Enter"> <button class="btn btn-info" onclick="randomcondition();"> Click To Answer</button> </p>
+                <p>Enter The Guess Number : <input type="text" id="guessno" value="" placeholder="Enter" onfocus=" this.value='';"> <button class="btn btn-info" onclick="randomcondition();"> Click To Answer</button> </p>
             </div>
         </div>
         <div class="col-md-2 border border-success">
-            <div class="container" id="arrow">
-              
+            <div class="container text-center" id="arrow">
+               <h1 class=" text-center" id="chances1">10</h1>
+               <p>Tries left</p>
             </div>
         </div>
         <div class="col-md-4 border border-info">
@@ -37,7 +39,7 @@
             <div class="row mt-5 text-center">
                 
                 <div class="col-md-6">
-                   <label for=""><b>Ramdom No Was :</b>  <label id="showgrandom" id><b> Random no</b> </label></label>
+                   <label for=""><b>Ramdom No Was :</b>  <label for="" id="displayran"> <B>Random was</B>  </label></label>
                 </div>
                 <div class="col-md-6">
                     <label for=""><b>Guess Number Was : </b> <label id="guessdisplay" id><b>your Guess</b> </label></label>
@@ -47,8 +49,23 @@
             <div class="container mt-5 text-center"><b>Press Click to Answer Button  to Continue</b>  </div>
         </div>
     </div>
+    <div id="won" class="won">
+        <h1>Congratulation !!!!!</h1>
+        <h2>You Won the Match</h2>
+        <h4>You Won the Game in <b id="trywon" ></b> Tries Out Of <b>10</b></h4>
+        <h3>Best OF luck</h3>
+    </div>
+    <div id="loss" class="loss">
+        <h1>Opps  !!!!!</h1>
+        <h2>Game OVER !!!</h2>
+        <P class="lead bg-light">Try Again to Won the Game</P>
+    </div>
     <div class="container text-center mt-5">
        <a href="index.html"> <button id="playagain"  class="btn btn-primary "> Play Again</button> </a>
     </div>
+
+  
+
+  
 </body>
 </html>

@@ -21,11 +21,14 @@ body{
     color: white;
 }
 #arrow{
-    background-color: tomato;
-    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    background-color: red;
+    clip-path: circle(50% at 50% 50%);
     margin-top: 15%;
-    width: 60%;
-    height: 60%;
+    width: 70%;
+    height: 50%;
+    padding-top: 15%;
+    color: white;
+    font-weight: bolder;
 
 }
 label{
@@ -37,4 +40,52 @@ label{
     font-size: 35px;
     margin: 5px;
     color: white;
+}
+
+#row11 {
+    padding: 30px;
+    margin-top: 20px;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+
+.won{
+    display: none;
+    margin: 0px auto;
+    background-color: green;
+    text-align: center;
+    padding: 80px 
+
+   
+}
+.won h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 85px;
+}
+.won h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.loss{
+    display: none;
+    margin: 0px auto;
+    background-color:red;
+    text-align: center;
+    padding: 80px 
+
+   
+}
+.loss h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 85px;
+}
+.loss h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 55px;
 }
